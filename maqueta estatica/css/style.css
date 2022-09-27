@@ -1,0 +1,165 @@
+.mat-card{
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding:10px;
+    border-color: blue;
+}
+
+.mat-card#first-card{
+    padding:0; 
+    
+}
+div#profile-background{  
+    display:absolute;
+    height: 800px;
+    z-index: 1;
+    padding:5px;
+}
+div#profile-background img{
+    width:100%;
+    border-radius: 32px 32px 0px 0px;
+    height: 300px;
+    
+}
+.nombre-perfil{
+    margin-top: 30px;
+}
+#btn-name{
+    margin-top: -30px;
+}
+#info-personal{
+    font-size: 20px;
+    margin-top: 30px;
+}
+h4#titulo{
+    background-color: white;
+}
+
+#perfil{
+    z-index: 1;
+    margin-top: -100px;
+}
+/*hasta aca es el banner y presentacion */
+
+
+.mat-card#second-card{
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding:10px;
+    border-color: blue;
+
+}
+
+.card-text{
+    margin-top: 1px;
+    text-align: center;
+}
+.btn-info{
+    margin-top: 5px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+
+#consultores{
+    border-radius: 22px;
+    margin:30px;
+    padding:30px;
+
+}
+
+#bancor{
+    border-radius: 22px;
+    margin:10px;
+    padding:30px;
+
+}
+
+.card-title{
+    background-color: rgb(250, 193, 203);
+    text-align: center;
+}
+
+.periodo{
+    background-color: rgb(250, 193, 203);
+    margin-top: -25px;
+}
+.container{
+    margin-top: -30px;
+    margin-left: 35px;
+    
+}
+.btn-editar{
+   
+    display:flex;
+    justify-content: right;   
+}
+
+
+.btn-eliminar{
+    display:flex;
+    justify-content: right;
+    
+}
+
+
+
+
+.card-text h2{
+    text-align: center;
+    
+}
+
+
+
+
+#botones-modificar{
+    width: 40px;
+    margin-left: 106%;
+    margin-top: -45px;
+
+
+}
+/*hasta aca esta la experiencia*/
+
+
+#cervantes{
+    margin-left: 60px;
+}
+
+#formacion1 p{
+    text-align: left;
+}
+
+h5{
+    margin-top: -25px;
+}
+
+#larrea{
+    margin-left: 60px;
+
+}
+
+#sei{
+    border: 2px solid blue;
+    margin-left: 60px;
+    
+}
+
+/* hasta aca esta la educacion*/
+
+#skills h5{
+    margin-top: 10px;
+}
+
+/*hasta aca estan los skills*/
+
+.piedepagina{
+    background-color: rgb(246, 161, 175);
+    height: 50px;
+    margin-top: 20px;
+
+}
+/*hasta aca esta el pie de pagina*/
