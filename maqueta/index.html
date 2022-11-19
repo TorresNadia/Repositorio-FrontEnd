@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <script src="https://kit.fontawesome.com/8ef95a3458.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+     <!--Aqui esta el menu de navegacion-->
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="imagenes/arg.jpg" alt="logo" width="40%">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+                <img src="imagenes/facebook.png" alt="facebook" width="30px">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="imagenes/instagram.jpg" alt="instagram" width="30px">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">
+                <img src="imagenes/linkedin.png" alt="linkedin" width="30px">
+            </a>
+          </li>  
+        </ul>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#loginModal">
+           Login
+          </button>
+
+      </div>
+    </div>
+  </nav>
+    <!--Aqui esta el banner y  foto de perfil-->
+  <div class="card mat-card" id="first-card">
+    <div id="profile-background"><img src="imagenes/banner.jpg"  class="banner">
+    </div>
+    <div id="cardprincipal"class="card mb-3" style="border:none; margin-left: 20px; margin-right:20px;">
+      <div class="row g-0">
+        <div class="col-md-4" style="padding:10px; border:none;">
+          <img src="imagenes/Nadia.jpg" class="img-fluid rounded rounded-circle" alt="Torres Nadia" id="fotoperfil">
+          <div class="d-grid gap-2 d-md-flex justify-content-end">
+            <a href="#" class="btn-editar me-md-2"data-bs-toggle="modal" data-bs-target="#fotoModal"><i class="fa-solid fa-pen"></i></a>
+        </div>  
+          <div class="card-text">
+            <h3 class="card-title" style="margin-top:15px;" id="nombre">TORRES NADIA</h3>
+            <div class="d-grid gap-2 d-md-flex justify-content-end">
+              <a href="#" class="btn-editar me-md-2" data-bs-toggle="modal" data-bs-target="#nombreModal"><i class="fa-solid fa-pen"></i></a>
+          </div> 
+          </div>
+        </div>
+        
+        <div class="col-md-8">  
+            <h3 class="card-title">TECNICA EN ADMINISTRACION DE EMPRESAS</h3>
+            <br>
+            <div class="card-body">
+              <div class="d-grid gap-2 d-md-flex justify-content-end ">
+                <a href="#" class="btn-editar me-md-2" data-bs-toggle="modal" data-bs-target="#perfilModal"><i class="fa-solid fa-pen"></i></a>
+                <a href="#" class="btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminarPerfilModal"><i class="fa-solid fa-trash"></i></a>  
+            </div>         
+            <br>
+            <h4 class="card-text">Me considero una persona responsable, dinámica y creativa, con facilidad de adaptación y capacidad de trabajar en equipo, con iniciativa para resolver problemas eficientemente y lograr las metas y objetivos trazados por la empresa.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+  </div>
+
+
+     <!--Aqui esta experiencia-->
+   <div class="card mat-card" id="second-card">
+    <div class="d-grid gap-2 d-md-block">
+      <button type="button" class="btn btn-info"><strong>EXPERIENCIA</strong></button>
+    </div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <a href="#" class="btn-lg me-md-2; width:20px; height:20px;" data-bs-toggle="modal" data-bs-target="#agregarExperienciaModal"><i class="fa-solid fa-circle-plus"></i></a>     
+    </div>   
+    <br> 
+     <!--Consultores--> 
+ <div class="card mat-card mb-3" style=" margin:10px; padding:10px;">
+  <div class="row g-0">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <a href="#" class="btn-editar me-md-2"data-bs-toggle="modal" data-bs-target="#editarExperienciaModal"><i class="fa-solid fa-pen"></i></a>
+      <a href="#" class="btn-eliminar"data-bs-toggle="modal" data-bs-target="#eliminarExperienciaModal"><i class="fa-solid fa-trash"></i></a>
+    </div> 
+    <div class="col-md-4" margin="10px">       
+      <img src="imagenes/logo consultores.jpg" id="consultores" class="img-fluid rounded rounded-circle" alt="Consultores de Empresas">
+      <div class="nombre-empresa">
+        <h4 class="card-text"><strong>Consultores de Empresas</strong></h4>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title"> <strong>PUESTO: ADMINISTRATIVA DE PERSONAL</strong></h4>     
+        <div class="col-md-12" >
+          <div class="card-body">             
+          </div>        
+        </div>                                        
+        <h5 class="periodo"><strong> Desde Octubre 2015- a la actualidad</strong></h5>
+        <p class="card-text">
+          <ul>
+            <li>
+              <p>
+          Firmas de contrato: Realizar la firma del contrato de los 
+          colaboradores, dar altas y bajas en AFIP, entregar EPP, 
+          enviar documentación al cliente, solicitar apertura de 
+          cuentas bancarias, actualizar legajo de colaboradores.
+          </p>
+          <li>
+            <p>
+          Ausencias: Seguimiento y control de ausencias por 
+          enfermedad y/o licencias especiales, realizar denuncia en 
+          ART y seguimiento de licencia, cargar las distintas 
+          novedades en sistema (Profit).
+            </p>
+          </li>
+          <li>
+            <p>
+              Embargos/Cuotas Alimentarias: Recibir los oficios y cargar 
+              en sistema, realizar los pagos luego de la liquidación de 
+              sueldo. Hacer seguimiento de los mismos hasta finalizarlos, 
+              enviar notas al juzgado.
+            </p>
+          </li> 
+          <li>
+            <p>
+          Obra Sociales: Gestión de altas, bajas y adhesiones en obras 
+          sociales como Swiss Medical, Osde, Medife y Galeno, 
+          controlar la facturación de la misma.
+            </p>
+          </li>
+          <li>
+            <p>
+          Gestión de Documentación: Habilitar al personal para el 
+          ingreso a distintas empresas (supermercados y 
+          automotrices).
+            </p>
+          </li>                      
+          </ul>                   
+      </div>       
+    </div>   
+  </div>
+ </div>  
+    <!--Banco cordoba-->
+    <div class="card mat-card mb-3" style=" margin:10px; padding:10px;">
+    <div class="row g-0">
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a href="#" class="btn-editar me-md-2"data-bs-toggle="modal" data-bs-target="#editarExperienciaModal"><i class="fa-solid fa-pen"></i></a>
+        <a href="#" class="btn-eliminar"data-bs-toggle="modal" data-bs-target="#eliminarExperienciaModal"><i class="fa-solid fa-trash"></i></a>
+      </div> 
+    <div class="col-md-4" margin="10px">
+      <img src="imagenes/logo bancor.png" id="bancor" class="img-fluid rounded rounded-circle" alt="Banco Cordoba" width="250px">
+      <div class="nombre-empresa">
+        <h4 class="card-text"><strong>Banco de la Provincia de Córdoba</strong></h4>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title"> <strong>PUESTO: AZAFATA</strong></h4>
+        <div class="col-md-12" >
+          <div class="card-body">
+          </div>        
+        </div> 
+        <h5 class="periodo"><strong> Desde Septiembre 2014 a Marzo 2015 (contrato eventual)</strong></h5>
+        <p class="card-text">
+          <ul>
+            <li>
+              <p>
+                Recepción: Derivar a los clientes a las distintas
+                áreas, entregar resúmenes de tarjetas, entrega de 
+                tarjetas de débito y crédito,blanqueos de PIN, entre
+                otros.
+          </p>
+          <li>
+            <p>
+              Auxiliar de Medios Alternativos: Ayudar a los clientes a 
+              realizar distintos tipos de gestiones (depósitos, 
+              transferencias, habilitar tarjetas, entre otros) por cajero 
+              automático.
+            </p>
+          </li>
+          <li>
+            <p>
+              Timbradora: Ayudar a realizar gestión de pagos de 
+              servicios por este medio, timbrados de contratos.
+            </p>
+          </li>                
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>    
+
+
+   </div>
+
+     <!-- Aqui esta la educacion-->
+    <div class="card mat-card" id="third-card">
+    <div class="d-grid gap-2 d-md-block">
+      <button type="button" class="btn btn-info"><strong>FORMACION ACADEMICA</strong></button>
+    </div> 
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <a href="#" class="btn-lg me-md-2; width:20px; height:20px;" data-bs-toggle="modal" data-bs-target="#agregarEducacionModal"><i class="fa-solid fa-circle-plus"></i></a>     
+    </div> 
+    <br>
+    <!--Cervantes-->
+      <div class="card mb-3" style=" margin:10px; padding:10px; border:none;">
+      <div class="row g-0">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <a href="#" class="btn-editar me-md-2"data-bs-toggle="modal" data-bs-target="#editarEducacionModal"><i class="fa-solid fa-pen"></i></a>
+          <a href="#" class="btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminarEducacionModal"><i class="fa-solid fa-trash"></i></a>
+        </div>
+        <div class="col-md-4">
+          <img src="imagenes/cervantes.jpg" class="img-fluid rounded rounded-circle" id="cervantes" alt="Cervantes" width="180px">
+        </div>
+        <div class="col-md-8">
+          <div id="formacion1" class="card-body">
+            <h3 class="card-title"><strong>INSTITUCION CERVANTES</strong></h3>
+            <div class="col-md-12" >
+              <div class="card-body">
+              </div>        
+            </div> 
+            <h5 class="card-title"><strong>Tecnicatura en Administración de Empresas</strong></h5>
+            <p class="card-text">Estado: Finalizado.
+              Mención de Honor por alto promedio.
+            </p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!--Larrea-->
+  <div class="card mb-3" style=" margin:10px; padding:10px; border:none;">
+    <div class="row g-0">
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a href="#" class="btn-editar me-md-2"data-bs-toggle="modal" data-bs-target="#editarEducacionModal"><i class="fa-solid fa-pen"></i></a>
+        <a href="#" class="btn-eliminar"data-bs-toggle="modal" data-bs-target="#eliminarEducacionModal"><i class="fa-solid fa-trash"></i></a>
+      </div>
+      <div class="col-md-4">
+        <img src="imagenes/larrea.jpg" id="larrea" class="img-fluid rounded rounded-circle" alt="Juan Larrea" width="180px">
+      </div>
+      <div class="col-md-8">
+        <div id="formacion1" class="card-body">
+          <h3 class="card-title"><strong>IPEM N°150 JUAN LARREA</strong></h3>
+          <div class="col-md-12" >
+            <div class="card-body">
+            </div>        
+          </div> 
+          <h5 class="card-title"><strong>Bachiller con orientación en economía y gestión de las organizaciones</strong></h5>
+          <p class="card-text">Estado: Finalizado.</p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Sei-->
+  <div class="card mb-3" style=" margin:10px; padding:10px; border:none;">
+    <div class="row g-0">
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a href="#" class="btn-editar me-md-2"data-bs-toggle="modal" data-bs-target="#editarEducacionModal"><i class="fa-solid fa-pen"></i></a>
+        <a href="#" class="btn-eliminar"data-bs-toggle="modal" data-bs-target="#eliminarEducacionModal"><i class="fa-solid fa-trash"></i></a>
+      </div>
+      <div class="col-md-4">
+        <img src="imagenes/sei.png" id="sei" class="img-fluid rounded rounded-circle" alt="Sei speak English" width="180px">
+      </div>
+      <div class="col-md-8">
+        <div id="formacion1" class="card-body">
+          <h3 class="card-title"><strong>SEI SPEAK ENGLISH</strong></h3>
+          <div class="col-md-12" >
+            <div class="card-body">
+            </div>        
+          </div> 
+          <h5 class="card-title"><strong>Curso de Inglés</strong></h5>
+          <p class="card-text">2021- Nivel Inicial - Completo</p>
+          <p class="card-text">2022- Segundo Año - En curso</p>        
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+     <!--Aqui estan los Skills-->   
+    <div class="card mat-card" id="fourth-card">
+    <div class="d-grid gap-2 d-md-block">
+      <button type="button" class="btn btn-info"><strong>SKILLS</strong></button>
+    </div> 
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <a href="#" class="btn-lg me-md-2; width:20px; height:20px;" data-bs-toggle="modal" data-bs-target="#agregarSkillsModal"><i class="fa-solid fa-circle-plus"></i></a>     
+    </div> 
+    <br> 
+    <!--Trabajo en equipo-->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">  
+      <a href="#" class="btn-editar me-md-2"data-bs-toggle="modal" data-bs-target="#editarSkillsModal"><i class="fa-solid fa-pen"></i></a>
+      <a href="#" class="btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminarSkillsModal"><i class="fa-solid fa-trash"></i></a>    
+    </div>
+    <div id="skills"class="card mb-3" style=" margin:10px; padding:10px; max-width: 900px; border:none;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <h5> Trabajo en Equipo</h5>
+        </div>
+        <div class="col-md-8">
+          <div id="skills-progress" class="card-body">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+            </div>                          
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--organizacion-->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">  
+      <a href="#" class="btn-editar me-md-2"data-bs-toggle="modal" data-bs-target="#editarSkillsModal"><i class="fa-solid fa-pen"></i></a>
+      <a href="#" class="btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminarSkillsModal"><i class="fa-solid fa-trash"></i></a>    
+    </div>
+    <div id="skills"class="card mb-3" style=" margin:10px; padding:10px; max-width: 900px; border:none;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <h5> Organización</h5>
+        </div>
+        <div class="col-md-8">
+          <div id="skills-progress" class="card-body">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>                            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Herramientas Office-->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">  
+      <a href="#" class="btn-editar me-md-2"data-bs-toggle="modal" data-bs-target="#editarSkillsModal"><i class="fa-solid fa-pen"></i></a>
+      <a href="#" class="btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminarSkillsModal"><i class="fa-solid fa-trash"></i></a>    
+    </div>
+    <div id="skills"class="card mb-3" style=" margin:10px; padding:10px; max-width: 900px; border:none;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <h5> Herramientas Office</h5>
+        </div>
+        <div class="col-md-8">
+          <div id="skills-progress" class="card-body">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>                            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Innovacion-->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">  
+      <a href="#" class="btn-editar me-md-2"data-bs-toggle="modal" data-bs-target="#editarSkillsModal"><i class="fa-solid fa-pen"></i></a>
+      <a href="#" class="btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminarSkillsModal"><i class="fa-solid fa-trash"></i></a>    
+    </div>
+    <div id="skills"class="card mb-3" style=" margin:10px; padding:10px; max-width: 900px; border:none;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <h5> Innovación</h5>
+        </div>
+        <div class="col-md-8">
+          <div id="skills-progress" class="card-body">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+            </div>                            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Ingles-->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">  
+      <a href="#" class="btn-editar me-md-2"data-bs-toggle="modal" data-bs-target="#editarSkillsModal"><i class="fa-solid fa-pen"></i></a>
+      <a href="#" class="btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminarSkillsModal"><i class="fa-solid fa-trash"></i></a>    
+    </div>
+    <div id="skills"class="card mb-3" style=" margin:10px; padding:10px; max-width: 900px; border:none;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <h5> Inglés</h5>
+        </div>
+        <div class="col-md-8">
+          <div id="skills-progress" class="card-body">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>                            
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  <footer><p class="piedepagina"></p></footer>
+
+
+ 
+
+
+  <!-- MODALES DE ENCABEZADO-->
+  
+  <!-- Modal (boton de login)-->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-primary">Ingresar</button>
+          </div>
+        </form>
+      </div>    
+      </div>
+    </div>
+  </div>
+
+<!--Modal (boton editar nombre)-->
+<div class="modal fade" id="nombreModal" tabindex="-1" aria-labelledby="nombreModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="nombreModalLabel">Cambiar Nombre</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"></label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal (boton editar foto)-->
+<div class="modal fade" id="fotoModal" tabindex="-1" aria-labelledby="fotoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="fotoModalLabel">Cambiar Foto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="mb-3">
+        <label for="formFile" class="form-label"></label>
+        <input class="form-control" type="file" id="formFile">
+      </div>    
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal editar perfil -->
+<div class="modal fade" id="perfilModal" tabindex="-1" aria-labelledby="perfilModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="perfilModalLabel">Editar Perfil</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="card-body">
+          <div class="mb-3">
+            <h3 class="card-title" placeholder="Titulo">Titulo</h3>
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>     
+          </div>
+          <div class="mb-3">
+            <h4 class="card-text"placeholder="Perfil">Perfil</h4>
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>     
+          </div>  
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal eliminar perfil -->
+<div class="modal fade" id="eliminarPerfilModal" tabindex="-1" aria-labelledby="eliminarPerfilModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="eliminarPerfilModalLabel">Eliminar Perfil</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            ¿Está seguro de eliminar perfil?
+          </label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+<!-- MODALES DE EXPERIENCIA-->
+
+      <!-- Modal (boton agregar experiencia)-->
+      <div class="modal fade" id="agregarExperienciaModal" tabindex="-1" aria-labelledby="agregarExperienciaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="agregarExperienciaModalLabel">Agregar Experiencia</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+                   <div class="card mat-card mb-3" style=" margin:10px; padding:10px;">
+                    <div class="row g-0">
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a href="#" class="btn-editar me-md-2"><i class="fa-solid fa-pen"></i></a>
+                        <a href="#" class="btn-eliminar"><i class="fa-solid fa-x"></i></a>
+                      </div>
+                      <div class="mb-3">
+                        <h5 class="modal-title" id="agregarExperienciaModalLabel"></h5>
+                        <label for="formFile" class="form-label"></label>
+                        <input class="form-control" type="file" id="formFile">                    
+                      </div> 
+                      <div class="input-group">
+                        <input type="text" aria-label="Nombre de empresa" class="form-control" placeholder="Nombre de la Empresa">
+                      </div>   
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h4 class="card-title"id="agregarExperienciaModalLabel"><strong>Puesto</strong></h4>
+                        <div class="input-group">
+                          <input type="text" aria-label="Puesto" class="form-control" placeholder="Puesto:">
+                        </div> 
+                        <div class="col-md-12" >
+                          <div class="card-body">
+                          </div>        
+                        </div> 
+                        <h5 class="card-title"id="agregarExperienciaModalLabel"><strong>Periodo</strong></h5>
+                        <div class="input-group">
+                          <input type="text" aria-label="Puesto" class="form-control" placeholder="Periodo:">
+                        </div>
+                        <p class="card-text">                    
+                         <textarea class="form-control" id="agregarExperienciaModalLabel" rows="3" placeholder="Descripción:"></textarea>               
+                      </div>
+                    </div>
+                  </div>
+                </div>    
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                  </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Modal (boton eliminar experiencia)-->
+      <div class="modal fade" id="eliminarExperienciaModal" tabindex="-1" aria-labelledby="eliminarExperienciaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="eliminarExperienciaModalLabel">Eliminar Experiencia</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  ¿Está seguro de eliminar experiencia?
+                </label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+        <!-- Modal (boton editar experiencia)-->
+        <div class="modal fade" id="editarExperienciaModal" tabindex="-1" aria-labelledby="editarExperienciaModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="editarExperienciaModalLabel">Editar Experiencia</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+                     <div class="card mat-card mb-3" style=" margin:10px; padding:10px;">
+                      <div class="row g-0">
+                        <div class="mb-3"> 
+                          <label for="formFile" class="form-label"></label>
+                          <input class="form-control" type="file" id="formFile">                                        
+                        </div> 
+                        <div class="input-group">
+                          <input type="text" aria-label="Nombre de empresa" class="form-control" placeholder="Nombre de la Empresa">
+                        </div>   
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h4 class="card-title"id="editarExperienciaModalLabel"><strong>Puesto</strong></h4>
+                          <div class="input-group">
+                            <input type="text" aria-label="Puesto" class="form-control" placeholder="Puesto:">
+                          </div> 
+                          <div class="col-md-12" >
+                            <div class="card-body">
+                            </div>        
+                          </div> 
+                          <h5 class="card-title"id="editarExperienciaModalLabel"><strong>Periodo</strong></h5>
+                          <div class="input-group">
+                            <input type="text" aria-label="Puesto" class="form-control" placeholder="Periodo:">
+                          </div>
+                          <p class="card-text">                    
+                           <textarea class="form-control" id="editarExperienciaModalLabel" rows="3" placeholder="Descripción:"></textarea>               
+                        </div>
+                      </div>
+                    </div>
+                  </div>    
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+            </div>
+          </div>
+        </div>
+
+
+<!-- MODALES DE EDUCACION-->
+  <!-- Modal (boton agregar educacion)-->
+  <div class="modal fade" id="agregarEducacionModal" tabindex="-1" aria-labelledby="agregarEducacionModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="agregarEducacionModalLabel">Agregar Educación:</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+               <div class="card mat-card mb-3" style=" margin:10px; padding:10px;">
+                <div class="row g-0">
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="#" class="btn-editar me-md-2"><i class="fa-solid fa-pen"></i></a>
+                    <a href="#" class="btn-eliminar"><i class="fa-solid fa-trash"></i></a>
+                  </div>
+                  <div class="mb-3">
+                    <h5 class="modal-title" id="agregarEducacionModalLabel"></h5>
+                    <label for="formFile" class="form-label"></label>
+                    <input class="form-control" type="file" id="formFile">                    
+                  </div>   
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h4 class="card-title"id="agregarEducacionModalLabel"><strong>Institución</strong></h4>
+                    <div class="input-group">
+                      <input type="text" aria-label="Puesto" class="form-control" placeholder="Institución:">
+                    </div> 
+                    <div class="col-md-12" >
+                      <div class="card-body">
+                      </div>        
+                    </div> 
+                    <h5 class="card-title"id="agregarEducacionModalLabel"><strong>Título</strong></h5>
+                    <div class="input-group">
+                      <input type="text" aria-label="Puesto" class="form-control" placeholder="Titulo:">
+                    </div>
+                    <p class="card-text">                    
+                     <textarea class="form-control" id="agregarExperienciaModalLabel" rows="3" placeholder="Descripción:"></textarea>               
+                  </div>
+                </div>
+              </div>
+            </div>    
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal (boton eliminar educacion)-->
+  <div class="modal fade" id="eliminarEducacionModal" tabindex="-1" aria-labelledby="eliminarEducacionModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="eliminarEducacionModalLabel">Eliminar Educación</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              ¿Está seguro de eliminar educación?
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal (boton editar educacion)-->
+    <div class="modal fade" id="editarEducacionModal" tabindex="-1" aria-labelledby="editarEducacionModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editarEducacionModalLabel">Editar Educación</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+                 <div class="card mat-card mb-3" style=" margin:10px; padding:10px;">
+                  <div class="row g-0">
+                    <div class="mb-3"> 
+                      <label for="formFile" class="form-label"></label>
+                      <input class="form-control" type="file" id="formFile">                                        
+                    </div>    
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h4 class="card-title"id="editarEducacionModalLabel"><strong>Institución</strong></h4>
+                      <div class="input-group">
+                        <input type="text" aria-label="Puesto" class="form-control" placeholder="Institución:">
+                      </div> 
+                      <div class="col-md-12" >
+                        <div class="card-body">
+                        </div>        
+                      </div> 
+                      <h5 class="card-title"id="editarEducacionModalLabel"><strong>Título</strong></h5>
+                      <div class="input-group">
+                        <input type="text" aria-label="Puesto" class="form-control" placeholder="Título:">
+                      </div>
+                      <p class="card-text">                    
+                       <textarea class="form-control" id="editarExperienciaModalLabel" rows="3" placeholder="Descripción:"></textarea>               
+                    </div>
+                  </div>
+                </div>
+              </div>    
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+        </div>
+      </div>
+    </div>
+
+
+
+<!-- MODALES DE Skills-->
+<!--Modal (agregar Skills)-->
+<div class="modal fade" id="agregarSkillsModal" tabindex="-1" aria-labelledby="agregarSkillsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="agregarSkillsModalLabel">Agregar Skills</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">  
+        <a href="#" class="btn-editar me-md-2"data-bs-toggle="modal" data-bs-target="#editarSkillsModal"><i class="fa-solid fa-pen"></i></a>
+        <a href="#" class="btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminarSkillsModal"><i class="fa-solid fa-trash"></i></a>    
+      </div>
+      <div id="skills"class="card mb-3" style=" margin:10px; padding:10px; max-width: 900px; border:none;">
+        <div class="row g-0">
+          <div class="col-md-4">        
+            <div class="input-group">
+              <input type="text" aria-label="Nombre de skills" class="form-control" placeholder="Nombre de Skills">
+            </div>   
+          </div>
+          <div class="col-md-8">
+            <div class="input-group">
+              <input type="text" aria-label="Porcentaje" class="form-control" placeholder="Porcentaje:">
+            </div>  
+            <div id="skills-progress" class="card-body">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>                         
+            </div>
+          </div>
+        </div>
+      </div>           
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal (boton eliminar skills)-->
+<div class="modal fade" id="eliminarSkillsModal" tabindex="-1" aria-labelledby="eliminarSkillsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="eliminarSkillsModalLabel">Eliminar Skills</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            ¿Está seguro de eliminar Skills?
+          </label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal (boton editar skills)-->
+  <div class="modal fade" id="editarSkillsModal" tabindex="-1" aria-labelledby="editarSkillsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editarSkillsModalLabel">Editar Skills</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="skills"class="card mb-3" style=" margin:10px; padding:10px; max-width: 900px; border:none;">
+          <div class="row g-0">
+            <div class="col-md-4">        
+              <div class="input-group">
+                <input type="text" aria-label="Nombre de skills" class="form-control" placeholder="Nombre de Skills">
+              </div>   
+            </div>
+            <div class="col-md-8">
+              <div class="input-group">
+                <input type="text" aria-label="Porcentaje" class="form-control" placeholder="Porcentaje:">
+              </div>  
+              <div id="skills-progress" class="card-body">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>                         
+              </div>
+            </div>
+          </div>
+        </div> 
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+              </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

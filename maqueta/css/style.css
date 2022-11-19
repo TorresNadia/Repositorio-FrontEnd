@@ -1,0 +1,146 @@
+.mat-card{
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding:10px;
+    border-color: blue;
+}
+
+.mat-card#first-card{
+    padding:0; 
+    
+}
+div#profile-background{   
+    height: 800px;  
+    padding:5px;
+}
+div#profile-background img{
+    width:100%;
+    border-radius: 32px 32px 0px 0px;
+    height: 300px;
+    display:absolute;
+    z-index: 1;
+    
+}
+
+#cardprincipal{
+    margin-top:-480px;
+    
+
+}
+
+#fotoperfil{
+    display:absolute; 
+    z-index: 1;
+    margin-top: -100px;
+
+}
+
+#nombre{
+    background-color:white;
+
+}
+
+/*hasta aca es el banner y presentacion */
+
+
+.mat-card#second-card{
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding:10px;
+    border-color: blue;
+
+}
+
+.card-text{
+    margin-top: 1px;
+    text-align: center;
+}
+.btn-info{
+    margin-top: 5px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+
+#consultores{
+    border-radius: 22px;
+    margin:30px;
+    padding:30px;
+
+}
+
+#bancor{
+    border-radius: 22px;
+    margin:10px;
+    padding:30px;
+
+}
+
+.card-title{
+    background-color: rgb(250, 193, 203);
+    text-align: center;
+}
+
+.periodo{
+    background-color: rgb(250, 193, 203);
+    margin-top: -25px;
+}
+.container{
+    margin-top: -30px;
+    margin-left: 35px;
+    
+}
+
+.card-text h2{
+    text-align: center;
+    
+}
+
+
+
+
+
+
+/*hasta aca esta la experiencia*/
+
+
+#cervantes{
+    margin-left: 60px;
+}
+
+#formacion1 p{
+    text-align: left;
+}
+
+h5{
+    margin-top: -25px;
+}
+
+#larrea{
+    margin-left: 60px;
+
+}
+
+#sei{
+    border: 2px solid blue;
+    margin-left: 60px;
+    
+}
+
+/* hasta aca esta la educacion*/
+
+#skills h5{
+    margin-top: 10px;
+}
+
+/*hasta aca estan los skills*/
+
+.piedepagina{
+    background-color: rgb(246, 161, 175);
+    height: 50px;
+    margin-top: 20px;
+
+}
+/*hasta aca esta el pie de pagina*/
